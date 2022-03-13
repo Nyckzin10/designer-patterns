@@ -28,6 +28,7 @@ class MotoPopular(Veiculo):
 
 class VeiculoFactory:
     @staticmethod
+    @abstractmethod
     def get_carro(tipo: str) -> Veiculo:
         if tipo == 'luxo':
             return CarroLuxo()
